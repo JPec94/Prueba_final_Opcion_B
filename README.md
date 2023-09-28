@@ -11,4 +11,10 @@
 
 [![img.png](https://i.postimg.cc/s2fhKvqh/img.png)](https://postimg.cc/hXwvtPSD)
 
+3. <p align="justify">Luego se procede a definir el navegador, url del sitio web y la clase principal en python para extraer la lista de elementos.
 
+```javascript
+driver = webdriver.Edge()
+driver.get("https://www.patiodemotos.com/ecuador/anunciante/yamaha-ecuador")
+moto_list = driver.find_elements(By.CLASS_NAME, "even")
+```
