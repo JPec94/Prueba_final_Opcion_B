@@ -9,3 +9,6 @@
 
 2. <p align="justify">Lo siguiente es inspeccionar cada uno de los elementos, la idea es encontrar la clase que contiene las caracteristicas que exciben cada una de las motocicletas en el sitio web.
 
+![img.png](img.png)
+
+
