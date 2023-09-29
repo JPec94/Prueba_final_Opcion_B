@@ -1,4 +1,4 @@
-# Prueba Final Opción B
+# <p align="center">Prueba Final Opción B
 
 ## Parte 1
 
@@ -19,6 +19,22 @@ driver.get("https://www.patiodemotos.com/ecuador/anunciante/yamaha-ecuador")
 moto_list = driver.find_elements(By.CLASS_NAME, "even")
 ```
 4. <p align="justify"> Se continúa con la búsqueda y extracción de información, donde se hace un ciclo for para obtener información de cada una de las clases.
+
+```javascript
+for f in moto_list.
+  moto = f.find_element(By.CLASS_NAME, "views-field-title").text
+  price_m = f.find_element(By.CLASS_NAME, "views-field-field-precio").text
+  city_m = f.find_element(By.CLASS_NAME, "views-field-field-ciudad").text
+  owner_m = f.find_element(By.CLASS_NAME, "views-field-body").text
+  telf_m = f.find_element(By.CLASS_NAME, "views-field-field-tel").text
+```
+5. <p align="justify">Del mismo modo se procede a imprimir las variables definidas para cada una de las caracteristicas de la lista, dando como resultado:
+
+[![img1.png](https://i.postimg.cc/RZ9qbM47/img1.png)](https://postimg.cc/RNsMWx3h)
+
+## Parte 2
+
+1. <p align="justify">Para almacenar esta información de forma estructurada se utilizó la base de datos en la nube MongosDB, donde se configuró el cluster para su guardar está información como se realizó en la clase.
 
 ```javascript
 for f in moto_list.
