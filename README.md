@@ -37,10 +37,12 @@ for f in moto_list.
 1. <p align="justify">Para almacenar esta información de forma estructurada se utilizó la base de datos en la nube MongosDB, donde se configuró el cluster para su guardar está información como se realizó en la clase.
 
 ```javascript
-for f in moto_list.
-  moto = f.find_element(By.CLASS_NAME, "views-field-title").text
-  price_m = f.find_element(By.CLASS_NAME, "views-field-field-precio").text
-  city_m = f.find_element(By.CLASS_NAME, "views-field-field-ciudad").text
-  owner_m = f.find_element(By.CLASS_NAME, "views-field-body").text
-  telf_m = f.find_element(By.CLASS_NAME, "views-field-field-tel").text
+    def __init__(self):
+        user = os.getenv("MONGODB_USER")
+        password = os.getenv("MONGODB_PASS")
+        uri = f"mongodb+srv://{user}:{password}@datapruebafinal.cbsjndj.mongodb.net/?retryWrites=true&w=majority"
+
+        # Create a new client and connect to the server
+        self.client = MongoClient(uri, server_api=ServerApi('1'))
 ```
+2. Se debe configurar el usuario y contraseña por seguridad, 
