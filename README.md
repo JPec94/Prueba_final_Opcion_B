@@ -85,5 +85,7 @@ for f in moto_list.
 ```
 ## CONCLUSIONES
 
-* <p align="justify">
-
+* <p align="justify">Para buscar las clases de una manera más rápida se puede utilizar el navegador LibreWolf, ya que este proporcioná una interfaz más amigable al inspeccionar los elementos que conforman la página web para hallar las clases que contienen la información principal para la otención de la lista de información.
+* <p align="justify">Teniendo en cuenta toda la información proporcionada en clases, se puede establecer el vinculo de la base de datos con pychard, ya que se deben seguir los pasos de forma ordenada para la creación del cluster, cabe resaltar que las líneas de código del usuario y contraseña deben estar encripatadas por seguridad.
+* <p align="justify">Al momento de crear el servicio web para que se reflejen la información almacenada en MongoDB, se debe añadir la librería Flask en el archivo requirements para instalarla desde el terminal, siendo este un paso necesario para la programación de la clase mongo_flask.
+* <p align="justify">Las líneas de código expuestas en el paso 3, se utilizan para obtener las listas de la base de datos y es necesario crear un archivo .html ya que al usar Flask permite solamente enviar datos a render_template, debido a esto requiere que los archivos estén en una carpeta de "plantilla".
