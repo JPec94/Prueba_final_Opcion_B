@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Motos</title>
+</head>
+<body>
+    <h1>Listado de Motos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Costo</th>
+                <th>Ubicación</th>
+                <th>Persona</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for moto in moto_data %}
+                <tr>
+                    <td>{{ moto.type }}</td>
+                    <td>{{ moto.cost }}</td>
+                    <td>{{ moto.location }}</td>
+                    <td>{{ moto.person }}</td>
+                    <td>{{ moto.phone }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
