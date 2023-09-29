@@ -45,4 +45,10 @@ for f in moto_list.
         # Create a new client and connect to the server
         self.client = MongoClient(uri, server_api=ServerApi('1'))
 ```
-2. Se debe configurar el usuario y contraseña por seguridad, 
+2. <p align="justify">Del mismo modo se debe configurar el usuario y contraseña por motivos de seguridad, esto permite habilitar la conexión con el servidor de mongos para el almacenamiento de la información dando como resultado:
+
+[![img2.png](https://i.postimg.cc/pLbPLxTm/img2.png)](https://postimg.cc/MvDC9C1w)
+
+3. <p align="justify">Para evidenciar el análisis de los datos obtenidos se realizá un diagrama de pastel para evaluar cual de las motocicletas es la más cara, obteniendo así que la Yahama YZF 690.
+
+[![img3.png](https://i.postimg.cc/gkYBmTyv/img3.png)](https://postimg.cc/LhbVVvbX)
