@@ -18,3 +18,13 @@ driver = webdriver.Edge()
 driver.get("https://www.patiodemotos.com/ecuador/anunciante/yamaha-ecuador")
 moto_list = driver.find_elements(By.CLASS_NAME, "even")
 ```
+4. <p align="justify"> Se continúa con la búsqueda y extracción de información, donde se hace un ciclo for para obtener información de cada una de las clases.
+
+```javascript
+for f in moto_list.
+  moto = f.find_element(By.CLASS_NAME, "views-field-title").text
+  price_m = f.find_element(By.CLASS_NAME, "views-field-field-precio").text
+  city_m = f.find_element(By.CLASS_NAME, "views-field-field-ciudad").text
+  owner_m = f.find_element(By.CLASS_NAME, "views-field-body").text
+  telf_m = f.find_element(By.CLASS_NAME, "views-field-field-tel").text
+```
