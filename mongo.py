@@ -12,7 +12,6 @@ class m_connect:
         password = os.getenv("MONGODB_PASS")
         uri = f"mongodb+srv://{user}:{password}@datapruebafinal.cbsjndj.mongodb.net/?retryWrites=true&w=majority"
 
-        # Create a new client and connect to the server
         self.client = MongoClient(uri, server_api=ServerApi('1'))
 
     def test_connection(self):

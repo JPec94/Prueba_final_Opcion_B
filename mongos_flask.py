@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 from pymongo.server_api import ServerApi
 import os
 
-
 load_dotenv()
 app = Flask(__name__)
 
@@ -17,7 +16,6 @@ class MongoDB:
         self.client = MongoClient(uri, server_api=ServerApi('1'))
         self.db = self.client['datapruebafinal']
         self.collection = self.db['moto_list']
-
 
 @app.route('/')
 def index():

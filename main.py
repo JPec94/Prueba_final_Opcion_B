@@ -39,5 +39,4 @@ for f in moto_list:
   print()
 
 
-
 driver.close()
